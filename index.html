@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0b0c0a">
+<title>BERIZ | Digital Commerce & Growth</title>
+<meta name="description" content="A Beriz ajuda negócios a venderem mais no digital: redes sociais, tráfego pago, marketplaces, loja virtual, automação e estratégia, tudo conectado.">
+<meta property="og:title" content="BERIZ | Digital Commerce & Growth">
+<meta property="og:description" content="Redes sociais, tráfego pago, marketplaces, loja virtual e automação para o seu negócio crescer no digital.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://beriztec.github.io/beriz/">
+<meta property="og:url" content="https://beriztec.github.io/beriz/">
+<meta property="og:site_name" content="BERIZ">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://beriztec.github.io/beriz/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="BERIZ — Venda mais. Sem improviso. A gente resolve.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://beriztec.github.io/beriz/assets/img/og-image.jpg">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>
+/* Antes de pintar: marca que há JS (sem JS a abertura não aparece), pula a
+   abertura se já foi vista nesta sessão e garante que ela nunca prenda a
+   página (se algum script falhar, some sozinha em 3,5s). */
+(function(d){var h=d.documentElement;h.classList.add('js');
+try{if(sessionStorage.getItem('berizIntro'))h.classList.add('intro-seen')}catch(e){}
+setTimeout(function(){var p=d.getElementById('preloader');if(p&&!p.classList.contains('done')){p.classList.add('done');d.body&&d.body.classList.remove('loading')}},3500);
+})(document);
+</script>
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/ios.css">
+</head>
+<body>
+<div id="preloader" aria-hidden="true">
+  <div class="pl-stage">
+    <img class="pl-base" src="assets/img/beriz-logo-light.svg" alt="" width="804" height="809">
+    <img class="pl-fill" src="assets/img/beriz-logo-green.svg" alt="" width="804" height="809">
+  </div>
+</div>
+<div id="scrollProgress" aria-hidden="true"></div>
+<header id="header">
+  <div class="header-inner">
+    <a href="#top" class="logo"><span class="logo-badge"><img src="assets/img/beriz-logo.svg" alt="Símbolo Beriz"><span>BERIZ</span></span></a>
+    <nav>
+      <div class="nav-links">
+        <a href="#atuacao">Áreas de atuação</a>
+        <a href="#sinais">Sinais de alerta</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#faq">Dúvidas</a>
+      </div>
+      <a href="#contato" class="nav-cta">Fale com a gente <span class="arrow">→</span></a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav" aria-label="Menu">
+  <img class="mn-logo" src="assets/img/beriz-logo-light.webp" alt="" aria-hidden="true" width="804" height="809" decoding="async">
+  <nav class="mn-list" aria-label="Navegação">
+    <a href="#atuacao"><em>01</em><span>Áreas de atuação</span><b aria-hidden="true">→</b></a>
+    <a href="#sinais"><em>02</em><span>Sinais de alerta</span><b aria-hidden="true">→</b></a>
+    <a href="#projetos"><em>03</em><span>Projetos reais</span><b aria-hidden="true">→</b></a>
+    <a href="#diagnostico"><em>04</em><span>Diagnóstico rápido</span><b aria-hidden="true">→</b></a>
+    <a href="#plataformas"><em>05</em><span>Plataformas</span><b aria-hidden="true">→</b></a>
+    <a href="#faq"><em>06</em><span>Dúvidas</span><b aria-hidden="true">→</b></a>
+  </nav>
+  <div class="mn-actions">
+    <a href="#contato" class="btn btn-green">Fale com a gente</a>
+    <a href="https://wa.me/5511994724695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Beriz%20e%20gostaria%20de%20conversar." class="btn btn-light" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="mn-foot">Commerce · Technology · Growth</p>
+</div>
+
+<main>
+  <section class="opening-hero" id="top">
+    <img class="hero-gear" src="assets/img/beriz-logo-light.webp" alt="" aria-hidden="true" width="804" height="809" decoding="async">
+    <div class="wrap opening-inner">
+      <h1 class="clip-lines hero-phrases">
+        <span class="line"><span class="line-inner">Venda <em class="hero-em">mais.</em></span></span>
+        <span class="line"><span class="line-inner">Sem <span class="hero-strike">improviso.</span></span></span>
+        <span class="line"><span class="line-inner">A gente <em class="hero-em">resolve.</em></span></span>
+      </h1>
+      <nav class="hero-apps reveal in" aria-label="Áreas de atuação">
+        <a href="#atuacao" class="hero-app" data-area="marketplace"><span class="app-icon icon-sand" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 9 5 4h14l1.5 5"/><path d="M4.5 9v11h15V9"/><path d="M3.5 9h17a3 3 0 0 1-5.7 1.2A3 3 0 0 1 12 12a3 3 0 0 1-2.8-1.8A3 3 0 0 1 3.5 9Z"/><path d="M10 20v-5h4v5"/></svg></span><span>Marketplaces</span></a>
+        <a href="#atuacao" class="hero-app" data-area="loja"><span class="app-icon icon-sage" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.5L22 8H6"/></svg></span><span>Loja virtual</span></a>
+        <a href="#atuacao" class="hero-app" data-area="trafego"><span class="app-icon icon-dark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span>Tráfego</span></a>
+        <a href="#atuacao" class="hero-app" data-area="social"><span class="app-icon " aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span><span>Redes</span></a>
+      </nav>
+      <a href="#atuacao" class="pain-rotator reveal in" id="painRotator" data-area="marketplace">
+        <span class="pr-label">Seu problema é</span>
+        <span class="pr-window"><span class="pr-word">anúncio que ninguém acha?</span></span>
+        <span class="pr-fix">A gente resolve <b aria-hidden="true">→</b></span>
+      </a>
+      <a href="https://wa.me/5511994724695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Beriz%20e%20gostaria%20de%20conversar." class="hero-wa reveal in" target="_blank" rel="noopener">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.1L4 28l6.1-1.6A11.9 11.9 0 0 0 16 28c6.6 0 12-5.4 12-12S22.6 4 16 4Z"/></svg>
+        Fale conosco
+      </a>
+    </div>
+  </section>
+
+  <section class="dark-strip intro-strip" aria-label="Posicionamento Beriz">
+    <div class="wrap strip-grid reveal">
+      <p>Não é sobre fazer posts ou anúncios soltos.</p>
+      <h2>É sobre fazer cada parte do seu digital trabalhar junto.</h2>
+      <span>Redes · Tráfego · Loja · Operação</span>
+    </div>
+  </section>
+
+  <section class="hero" aria-label="Frentes da Beriz">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h2 class="reveal in">Tudo o que o seu negócio precisa para <span class="accent-word">vender online</span>, em um só lugar.</h2>
+        <p class="sub reveal in">Cuidamos do perfil nas redes, dos anúncios, da loja virtual, dos marketplaces e dos processos por trás das vendas. <span class="hl">Você não precisa contratar cinco fornecedores diferentes.</span></p>
+        <div class="hero-ctas reveal in">
+          <a href="#contato" class="btn btn-green">Conversar agora</a>
+          <a href="#atuacao" class="btn btn-ghost">Ver áreas de atuação</a>
+        </div>
+        <div class="hero-meta reveal in"><span>Commerce</span><i></i><span>Technology</span><i></i><span>Growth</span></div>
+      </div>
+      <div class="globe-wrap reveal in">
+        <div class="logo-stage" id="berizLogoStage">
+          <img class="scroll-logo" id="berizScrollLogo" src="assets/img/beriz-logo.svg" alt="Símbolo Beriz">
+          <div class="capability-cloud" id="capabilityCloud" aria-label="Áreas de atuação">
+            <span class="capability" data-capability="0">Loja virtual</span>
+            <span class="capability" data-capability="1">Marketplaces</span>
+            <span class="capability" data-capability="2">Tráfego pago</span>
+            <span class="capability" data-capability="3">Redes sociais &amp; conteúdo</span>
+            <span class="capability" data-capability="4">Automação &amp; IA</span>
+            <span class="capability" data-capability="5">Estratégia digital</span>
+          </div>
+          <div class="logo-progress" aria-hidden="true"><span id="logoProgressFill"></span></div>
+        </div>
+        <div class="globe-caption"><span class="green-dot"></span>role a página para ver nossas frentes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOVA SEÇÃO: ÁREAS DE ATUAÇÃO ============ -->
+  <section class="areas" id="atuacao" aria-labelledby="areas-title">
+    <div class="wrap">
+      <div class="areas-head reveal">
+        <div>
+          <h2 id="areas-title">Onde o seu negócio está travando? <span>A gente resolve.</span></h2>
+        </div>
+        <p>Escolha a área e veja <b>o problema</b>, <b>a solução</b> e <b>o resultado</b>. Toque nos exemplos para testar.</p>
+      </div>
+
+      <div class="area-dock reveal" role="tablist" aria-label="Escolha uma área">
+        <button class="area-tab" role="tab" id="tab-marketplace" aria-controls="panel-marketplace" aria-selected="true" data-area-tab="marketplace">
+          <span class="app-icon icon-sand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9 5 4h14l1.5 5"/><path d="M4.5 9v11h15V9"/><path d="M3.5 9h17a3 3 0 0 1-5.7 1.2A3 3 0 0 1 12 12a3 3 0 0 1-2.8-1.8A3 3 0 0 1 3.5 9Z"/><path d="M10 20v-5h4v5"/></svg></span>
+          <span>Marketplaces<small>ML, Shopee, Amazon…</small></span>
+        </button>
+        <button class="area-tab" role="tab" id="tab-loja" aria-controls="panel-loja" aria-selected="false" tabindex="-1" data-area-tab="loja">
+          <span class="app-icon icon-sage"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.5L22 8H6"/></svg></span>
+          <span>Loja virtual<small>e-commerce próprio</small></span>
+        </button>
+        <button class="area-tab" role="tab" id="tab-trafego" aria-controls="panel-trafego" aria-selected="false" tabindex="-1" data-area-tab="trafego">
+          <span class="app-icon icon-dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
+          <span>Tráfego pago<small>anúncios que vendem</small></span>
+        </button>
+        <button class="area-tab" role="tab" id="tab-social" aria-controls="panel-social" aria-selected="false" tabindex="-1" data-area-tab="social">
+          <span class="app-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span>
+          <span>Redes sociais<small>perfil e conteúdo</small></span>
+        </button>
+      </div>
+
+      <!-- Painel: Marketplaces -->
+      <article class="area-panel reveal" role="tabpanel" id="panel-marketplace" aria-labelledby="tab-marketplace" data-area-panel="marketplace">
+        <div class="area-info">
+          <div class="area-title"><span class="app-icon icon-sand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 9 5 4h14l1.5 5"/><path d="M4.5 9v11h15V9"/><path d="M3.5 9h17a3 3 0 0 1-5.7 1.2A3 3 0 0 1 12 12a3 3 0 0 1-2.8-1.8A3 3 0 0 1 3.5 9Z"/><path d="M10 20v-5h4v5"/></svg></span><h3>Marketplaces</h3></div>
+          <p class="area-promise">Venda no Mercado Livre, Shopee, Amazon, Magalu, TikTok Shop e SHEIN com anúncios que <span class="hl">aparecem na busca e convertem</span>.</p>
+          <span class="block-label">Você se identifica?</span>
+          <div class="pain-list">
+            <p class="pain">Meus anúncios <span class="hl-pain">não aparecem</span> quando o cliente procura.</p>
+            <p class="pain">Cada marketplace vira uma <span class="hl-pain">bagunça de estoque e preço</span>.</p>
+            <p class="pain">Minha <span class="hl-pain">reputação está baixa</span> e não sei como subir.</p>
+          </div>
+          <details class="do-more" open><summary class="block-label">O que a Beriz faz <i aria-hidden="true"></i></summary>
+          <ul class="do-list">
+            <li>Abre e configura suas contas do jeito certo desde o início.</li>
+            <li>Otimiza título, fotos e ficha técnica de cada anúncio.</li>
+            <li>Calcula o preço já com taxas e frete, para não vender no prejuízo.</li>
+            <li>Cuida de reputação, perguntas e avaliações.</li>
+            <li>Gerencia os anúncios internos (Mercado Ads, Shopee Ads e outros).</li>
+          </ul></details>
+          <div class="compare">
+            <div class="before"><b>Hoje</b>Anúncio esquecido, sem posição e sem margem.</div>
+            <i aria-hidden="true">→</i>
+            <div class="after"><b>Com a Beriz</b>Anúncios bem posicionados e preço que dá lucro.</div>
+          </div>
+          <div class="area-cta"><a href="#contato" class="btn btn-green" data-goal="Crescer nos marketplaces">Quero vender em marketplaces</a><p>Serve tanto para quem está começando quanto para quem já vende.</p></div>
+        </div>
+        <div class="area-visual" data-demo="marketplace" aria-label="Exemplo interativo: otimização de anúncio">
+          <div class="visual-top"><div class="seg" role="radiogroup" aria-label="Comparar hoje e com a Beriz"><button type="button" role="radio" aria-checked="true" data-seg="off">Hoje</button><button type="button" role="radio" aria-checked="false" data-seg="on">Com a Beriz</button><i class="seg-thumb" aria-hidden="true"></i></div><p class="visual-hint">ou toque nas otimizações</p></div>
+          <div class="widget">
+            <div class="w-head">Seu anúncio <span class="w-pill" data-mkt-pill>sem destaque</span></div>
+            <div class="listing">
+              <div class="listing-img"><i></i></div>
+              <div><strong>Seu produto com título claro e completo</strong><div class="stars" data-mkt-stars>★★★☆☆<span>reputação</span></div><div class="price">R$ 00,00</div></div>
+            </div>
+            <div class="meter"><span>Qualidade do anúncio</span><b data-mkt-score>20%</b><i><em data-mkt-bar style="--v:20%"></em></i></div>
+            <div class="w-sub" data-mkt-pos>Posição na busca: página 5</div>
+            <div class="chips">
+              <button type="button" class="chip" aria-pressed="false" data-mkt-chip>Título com palavras-chave</button>
+              <button type="button" class="chip" aria-pressed="false" data-mkt-chip>Fotos padronizadas</button>
+              <button type="button" class="chip" aria-pressed="false" data-mkt-chip>Ficha completa</button>
+              <button type="button" class="chip" aria-pressed="false" data-mkt-chip>Preço com margem</button>
+            </div>
+          </div>
+          <div class="widget widget-glass">
+            <div class="w-head">Onde você quer vender? <span data-mkt-channels>1 canal ativo</span></div>
+            <div class="channel-row">
+              <button type="button" class="channel" aria-pressed="true" title="Mercado Livre"><img src="assets/img/brands/mercadolivre.png" alt="Mercado Livre" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" aria-pressed="false" title="Shopee"><img src="assets/img/brands/shopee.png" alt="Shopee" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" aria-pressed="false" title="Amazon"><img src="assets/img/brands/amazon.png" alt="Amazon" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" aria-pressed="false" title="Magalu"><img src="assets/img/brands/magalu.png" alt="Magalu" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" aria-pressed="false" title="TikTok Shop"><img src="assets/img/brands/tiktok.png" alt="TikTok Shop" loading="lazy" width="42" height="42"></button>
+            </div>
+          </div>
+          <p class="visual-note">Exemplo ilustrativo</p>
+        </div>
+      </article>
+
+      <!-- Painel: Loja virtual -->
+      <article class="area-panel" role="tabpanel" id="panel-loja" aria-labelledby="tab-loja" data-area-panel="loja" hidden>
+        <div class="area-info">
+          <div class="area-title"><span class="app-icon icon-sage"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.5L22 8H6"/></svg></span><h3>Loja virtual (e-commerce)</h3></div>
+          <p class="area-promise">Uma loja própria rápida, bonita e pensada para o cliente <span class="hl">chegar até o fim da compra</span>.</p>
+          <span class="block-label">Você se identifica?</span>
+          <div class="pain-list">
+            <p class="pain">Tenho site, mas ele <span class="hl-pain">não vende</span>.</p>
+            <p class="pain">Muita gente coloca no carrinho e <span class="hl-pain">desiste</span>.</p>
+            <p class="pain">Minha loja é <span class="hl-pain">lenta e difícil de atualizar</span>.</p>
+          </div>
+          <details class="do-more" open><summary class="block-label">O que a Beriz faz <i aria-hidden="true"></i></summary>
+          <ul class="do-list">
+            <li>Cria ou migra sua loja em Shopify, Nuvemshop, Tray, Yampi e outras.</li>
+            <li>Monta páginas de produto que respondem as dúvidas do cliente.</li>
+            <li>Simplifica o checkout e organiza frete e formas de pagamento.</li>
+            <li>Integra loja, estoque, ERP e transportadoras.</li>
+            <li>Ajusta a loja continuamente para vender mais com o mesmo tráfego.</li>
+          </ul></details>
+          <div class="compare">
+            <div class="before"><b>Hoje</b>Visitas que chegam e vão embora sem comprar.</div>
+            <i aria-hidden="true">→</i>
+            <div class="after"><b>Com a Beriz</b>Uma jornada de compra simples, do produto ao pagamento.</div>
+          </div>
+          <div class="area-cta"><a href="#contato" class="btn btn-green" data-goal="Estruturar ou melhorar o e-commerce">Quero uma loja que vende</a><p>Tem loja ou está começando do zero? Atendemos os dois.</p></div>
+        </div>
+        <div class="area-visual" data-demo="loja" aria-label="Exemplo interativo: jornada de compra">
+          <div class="visual-top"><div class="seg" role="radiogroup" aria-label="Comparar hoje e com a Beriz"><button type="button" role="radio" aria-checked="true" data-seg="off">Hoje</button><button type="button" role="radio" aria-checked="false" data-seg="on">Com a Beriz</button><i class="seg-thumb" aria-hidden="true"></i></div><p class="visual-hint">ou simule uma compra</p></div>
+          <div class="widget">
+            <div class="shop-steps" data-shop-steps><span class="done">Produto</span><em></em><span>Carrinho</span><em></em><span>Pagamento</span><em></em><span>Pedido</span></div>
+            <div class="product-hero" data-shop-hero><i></i><b class="shop-done" aria-hidden="true">✓</b></div>
+            <div class="w-head">Página de produto clara <span data-shop-ready>3 de 3 ativos</span></div>
+            <div class="w-rows">
+              <button type="button" class="w-row w-toggle" aria-pressed="true" data-shop-item>Fotos, medidas e benefícios<i class="ok"></i></button>
+              <button type="button" class="w-row w-toggle" aria-pressed="true" data-shop-item>Avaliações de quem comprou<i class="ok"></i></button>
+              <button type="button" class="w-row w-toggle" aria-pressed="true" data-shop-item>Frete calculado na página<i class="ok"></i></button>
+            </div>
+            <button type="button" class="buy-btn" data-shop-buy>Adicionar ao carrinho</button>
+          </div>
+          <div class="widget widget-glass">
+            <div class="w-head">Sua plataforma <span data-shop-platform>Shopify</span></div>
+            <div class="channel-row" role="radiogroup" aria-label="Escolha a plataforma">
+              <button type="button" class="channel" role="radio" aria-checked="true" title="Shopify"><img src="assets/img/brands/shopify.png" alt="Shopify" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" role="radio" aria-checked="false" title="Nuvemshop"><img src="assets/img/brands/nuvemshop.png" alt="Nuvemshop" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" role="radio" aria-checked="false" title="Tray"><img src="assets/img/brands/tray.png" alt="Tray" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" role="radio" aria-checked="false" title="Yampi"><img src="assets/img/brands/yampi.png" alt="Yampi" loading="lazy" width="42" height="42"></button>
+              <button type="button" class="channel" role="radio" aria-checked="false" title="Loja Integrada"><img src="assets/img/brands/loja-integrada.png" alt="Loja Integrada" loading="lazy" width="42" height="42"></button>
+            </div>
+          </div>
+          <p class="visual-note">Exemplo ilustrativo</p>
+        </div>
+      </article>
+
+      <!-- Painel: Tráfego pago -->
+      <article class="area-panel" role="tabpanel" id="panel-trafego" aria-labelledby="tab-trafego" data-area-panel="trafego" hidden>
+        <div class="area-info">
+          <div class="area-title"><span class="app-icon icon-dark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Tráfego pago</h3></div>
+          <p class="area-promise">Anúncios que <span class="hl">trazem cliente, não só curtida</span>, com cada real investido acompanhado de perto.</p>
+          <span class="block-label">Você se identifica?</span>
+          <div class="pain-list">
+            <p class="pain">Já impulsionei post e <span class="hl-pain">não vendeu nada</span>.</p>
+            <p class="pain">Gasto com anúncio e <span class="hl-pain">não sei o que está dando resultado</span>.</p>
+            <p class="pain">Dependo só do orgânico e minhas vendas <span class="hl-pain">sobem e descem</span>.</p>
+          </div>
+          <details class="do-more" open><summary class="block-label">O que a Beriz faz <i aria-hidden="true"></i></summary>
+          <ul class="do-list">
+            <li>Cria e gerencia campanhas no Instagram, Facebook e Google.</li>
+            <li>Testa públicos, criativos e ofertas para achar o que vende.</li>
+            <li>Faz remarketing para quem visitou e não comprou.</li>
+            <li>Configura pixel e eventos para medir venda, não só clique.</li>
+            <li>Acompanha o investimento toda semana e ajusta rápido.</li>
+          </ul></details>
+          <div class="compare">
+            <div class="before"><b>Hoje</b>Impulsionar o post e torcer para dar certo.</div>
+            <i aria-hidden="true">→</i>
+            <div class="after"><b>Com a Beriz</b>Campanhas medidas, com custo por venda claro.</div>
+          </div>
+          <div class="area-cta"><a href="#contato" class="btn btn-green" data-goal="Aumentar vendas com tráfego pago">Quero anúncios que vendem</a><p>Antes de investir mais, a gente olha o que já existe.</p></div>
+        </div>
+        <div class="area-visual" data-demo="trafego" aria-label="Exemplo interativo: funil de anúncios">
+          <div class="visual-top"><div class="seg" role="radiogroup" aria-label="Comparar hoje e com a Beriz"><button type="button" role="radio" aria-checked="true" data-seg="off">Hoje</button><button type="button" role="radio" aria-checked="false" data-seg="on">Com a Beriz</button><i class="seg-thumb" aria-hidden="true"></i></div><p class="visual-hint">ou ative cada otimização</p></div>
+          <div class="widget">
+            <div class="w-head">Do anúncio à venda <span data-ads-label>sem otimização</span></div>
+            <div class="funnel" data-ads-funnel>
+              <div style="--w:100%"><b>Pessoas alcançadas</b><span>anúncio</span></div>
+              <div style="--w:56%"><b>Cliques</b><span>interesse</span></div>
+              <div style="--w:30%"><b>Carrinho</b><span></span></div>
+              <div style="--w:16%"><b>Compras</b><span></span></div>
+            </div>
+          </div>
+          <div class="toggle-stack">
+            <div class="flow-step"><span>Público certo<small>quem tem chance de comprar</small></span><button type="button" class="mini-switch" role="switch" aria-checked="false" aria-label="Público certo" data-ads-opt></button></div>
+            <div class="flow-step"><span>Criativos testados<small>o anúncio que mais vende</small></span><button type="button" class="mini-switch" role="switch" aria-checked="false" aria-label="Criativos testados" data-ads-opt></button></div>
+            <div class="flow-step"><span>Remarketing<small>para quem visitou e não comprou</small></span><button type="button" class="mini-switch" role="switch" aria-checked="false" aria-label="Remarketing" data-ads-opt></button></div>
+            <div class="flow-step"><span>Pixel de vendas<small>medir venda, não só clique</small></span><button type="button" class="mini-switch" role="switch" aria-checked="false" aria-label="Pixel de vendas" data-ads-opt></button></div>
+          </div>
+          <div class="widget widget-glass">
+            <div class="w-head">Custo por venda <span data-ads-cost>alto</span></div>
+            <svg class="spark" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="sparkFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#8b9b82" stop-opacity=".35"/><stop offset="1" stop-color="#8b9b82" stop-opacity="0"/></linearGradient></defs><path class="area" data-ads-area d=""/><path data-ads-line d=""/></svg>
+          </div>
+          <p class="visual-note">Exemplo ilustrativo, sem dados de cliente</p>
+        </div>
+      </article>
+
+      <!-- Painel: Redes sociais -->
+      <article class="area-panel" role="tabpanel" id="panel-social" aria-labelledby="tab-social" data-area-panel="social" hidden>
+        <div class="area-info">
+          <div class="area-title"><span class="app-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span><h3>Redes sociais &amp; conteúdo</h3></div>
+          <p class="area-promise">Um perfil que <span class="hl">passa confiança logo na primeira visita</span> e uma rotina de conteúdo que não depende de inspiração.</p>
+          <span class="block-label">Você se identifica?</span>
+          <div class="pain-list">
+            <p class="pain">Posto quando sobra tempo e <span class="hl-pain">não vejo retorno nenhum</span>.</p>
+            <p class="pain">Quem entra no meu perfil <span class="hl-pain">não entende o que eu vendo</span>.</p>
+            <p class="pain"><span class="hl-pain">Nunca sei o que postar</span>, nem para quem.</p>
+          </div>
+          <details class="do-more" open><summary class="block-label">O que a Beriz faz <i aria-hidden="true"></i></summary>
+          <ul class="do-list">
+            <li>Organiza o perfil inteiro: bio, destaques, link e foto.</li>
+            <li>Monta um calendário de posts com pautas e formatos definidos.</li>
+            <li>Cria posts, carrosséis e roteiros de vídeo com textos que vendem.</li>
+            <li>Define uma identidade visual para o feed ficar com cara de marca.</li>
+            <li>Mostra todo mês o que funcionou e o que vamos ajustar.</li>
+          </ul></details>
+          <div class="compare">
+            <div class="before"><b>Hoje</b>Posts soltos, sem frequência e sem objetivo.</div>
+            <i aria-hidden="true">→</i>
+            <div class="after"><b>Com a Beriz</b>Perfil organizado e conteúdo com propósito, toda semana.</div>
+          </div>
+          <div class="area-cta"><a href="#contato" class="btn btn-green" data-goal="Organizar marketing e redes sociais">Quero organizar minhas redes</a><p>Você conta como está hoje e a gente mostra por onde começar.</p></div>
+        </div>
+        <div class="area-visual" data-demo="social" aria-label="Exemplo interativo: calendário de conteúdo">
+          <div class="visual-top"><div class="seg" role="radiogroup" aria-label="Comparar hoje e com a Beriz"><button type="button" role="radio" aria-checked="true" data-seg="off">Hoje</button><button type="button" role="radio" aria-checked="false" data-seg="on">Com a Beriz</button><i class="seg-thumb" aria-hidden="true"></i></div><p class="visual-hint">ou toque nos dias para planejar</p></div>
+          <div class="widget">
+            <div class="w-head">Sua semana de conteúdo <span data-week-count>4 posts</span></div>
+            <div class="week">
+              <div>Seg<button type="button" class="day" data-type="reel" aria-label="Segunda: vídeo"></button></div>
+              <div>Ter<button type="button" class="day" data-type="carr" aria-label="Terça: carrossel"></button></div>
+              <div>Qua<button type="button" class="day" data-type="" aria-label="Quarta: sem post"></button></div>
+              <div>Qui<button type="button" class="day" data-type="reel" aria-label="Quinta: vídeo"></button></div>
+              <div>Sex<button type="button" class="day" data-type="story" aria-label="Sexta: stories"></button></div>
+              <div>Sáb<button type="button" class="day" data-type="" aria-label="Sábado: sem post"></button></div>
+              <div>Dom<button type="button" class="day" data-type="" aria-label="Domingo: sem post"></button></div>
+            </div>
+            <div class="legend"><span style="--c:var(--green)">Vídeo</span><span style="--c:#e3ddd1">Carrossel</span><span style="--c:var(--dark)">Stories</span></div>
+          </div>
+          <div class="widget">
+            <div class="w-head">Perfil organizado <span class="w-pill" data-profile-pill>1 de 3</span></div>
+            <div class="w-rows">
+              <button type="button" class="w-row w-toggle" aria-pressed="true" data-profile-item>Bio que explica o que você vende<i class="ok"></i></button>
+              <button type="button" class="w-row w-toggle" aria-pressed="false" data-profile-item>Destaques: sobre, produtos, dúvidas<i class="ok"></i></button>
+              <button type="button" class="w-row w-toggle" aria-pressed="false" data-profile-item>Link direto para comprar<i class="ok"></i></button>
+            </div>
+          </div>
+          <p class="visual-note">Exemplo ilustrativo</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="platforms" id="plataformas" aria-labelledby="platforms-title">
+    <div class="wrap">
+      <div class="platforms-intro reveal">
+        <div>
+          <h2 id="platforms-title">Trabalhamos com as plataformas <span>que você já usa.</span></h2>
+        </div>
+        <p>Não importa onde você vende hoje: a gente conecta canais, tecnologia e anúncios para tudo funcionar junto.</p>
+      </div>
+
+      <div class="platform-groups">
+        <article class="platform-group reveal">
+          <div class="platform-group-head">
+            <span>01</span>
+            <div><h3>Marketplaces</h3><p>Presença, operação e performance nos maiores canais de venda.</p></div>
+          </div>
+          <div class="platform-grid marketplace-grid" aria-label="Marketplaces">
+            <div class="brand-card brand-mercado" title="Mercado Livre">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/mercadolivre.png" alt="Mercado Livre" loading="lazy" width="62" height="62"><strong>mercado livre</strong>
+            </div>
+            <div class="brand-card brand-shopee" title="Shopee">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/shopee.png" alt="Shopee" loading="lazy" width="62" height="62"><strong>Shopee</strong>
+            </div>
+            <div class="brand-card brand-tiktok" title="TikTok Shop">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/tiktok.png" alt="TikTok Shop" loading="lazy" width="62" height="62"><strong>TikTok <em>Shop</em></strong>
+            </div>
+            <div class="brand-card brand-amazon" title="Amazon">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/amazon.png" alt="Amazon" loading="lazy" width="62" height="62"><span class="brand-word amazon-word">amazon</span>
+            </div>
+            <div class="brand-card brand-magalu" title="Magalu">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/magalu.png" alt="Magalu" loading="lazy" width="62" height="62"><strong>magalu</strong>
+            </div>
+            <div class="brand-card brand-shein" title="SHEIN">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/shein.png" alt="SHEIN" loading="lazy" width="62" height="62"><span class="brand-word shein-word">SHEIN</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="platform-group reveal">
+          <div class="platform-group-head">
+            <span>02</span>
+            <div><h3>Loja virtual</h3><p>Criação, migração e melhoria de lojas nas principais plataformas.</p></div>
+          </div>
+          <div class="platform-grid ecommerce-grid" aria-label="Plataformas de e-commerce">
+            <div class="brand-card brand-shopify" title="Shopify">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/shopify.png" alt="Shopify" loading="lazy" width="62" height="62"><strong>shopify</strong>
+            </div>
+            <div class="brand-card brand-nuvem" title="Nuvemshop">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/nuvemshop.png" alt="Nuvemshop" loading="lazy" width="62" height="62"><strong>nuvemshop</strong>
+            </div>
+            <div class="brand-card brand-meloja" title="Meloja">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/meloja.png" alt="Meloja" loading="lazy" width="62" height="62"><strong>Meloja</strong>
+            </div>
+            <div class="brand-card brand-yampi" title="Yampi">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/yampi.png" alt="Yampi" loading="lazy" width="62" height="62"><strong>yampi</strong>
+            </div>
+            <div class="brand-card brand-li" title="Loja Integrada">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/loja-integrada.png" alt="Loja Integrada" loading="lazy" width="62" height="62"><strong>loja integrada</strong>
+            </div>
+            <div class="brand-card brand-tray" title="Tray">
+              <img class="brand-icon brand-logo-img" src="assets/img/brands/tray.png" alt="Tray" loading="lazy" width="62" height="62"><strong>tray</strong>
+            </div>
+          </div>
+        </article>
+
+        <article class="platform-group reveal">
+          <div class="platform-group-head">
+            <span>03</span>
+            <div><h3>Marketing &amp; tráfego</h3><p>Anúncios, conteúdo e busca para transformar atenção em venda.</p></div>
+          </div>
+          <div class="platform-grid growth-grid" aria-label="Marketing e tráfego">
+            <div class="brand-card brand-seo" title="SEO">
+              <span class="brand-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="13.5" cy="13.5" r="7.5"/><path d="m19 19 7 7"/></svg></span><strong>SEO</strong><small>Aparecer no Google</small>
+            </div>
+            <div class="brand-card brand-meta" title="Meta Ads">
+              <span class="brand-icon meta-loop"><svg viewBox="0 0 40 24" aria-hidden="true"><path d="M3 19c3.2-8.6 6.1-14 10-14 5.3 0 8.4 14 13.6 14 3.5 0 6.2-5.1 8.4-10.2 1.1-2.6 2-3.8 2-3.8M3 19c-1.4-3.8.3-9.5 3.5-12.4C8 5.2 10 4.8 12 6c4.7 2.8 7.1 13 13 13 5.7 0 9.4-8.1 12-14"/></svg></span><strong>Meta Ads</strong><small>Instagram e Facebook</small>
+            </div>
+            <div class="brand-card brand-marketing" title="Marketing e conteúdo">
+              <span class="brand-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m5 14 18-7v18L5 18v-4Z"/><path d="M23 12c3 1 4 7 0 9M9 19l2 7h5l-2-6"/></svg></span><strong>Conteúdo</strong><small>Redes sociais</small>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="social-marketing" id="marketing" aria-labelledby="marketing-title">
+    <div class="wrap social-marketing-grid">
+      <div class="social-marketing-copy reveal">
+        <h2 id="marketing-title">Redes sociais que <span>vendem.</span></h2>
+        <p class="social-lead">Organizamos a comunicação da sua marca para que perfil, conteúdo e anúncios passem a mesma mensagem: profissional, consistente e <span class="hl">com intenção de venda</span>.</p>
+
+        <div class="social-services" aria-label="Serviços de marketing e redes sociais">
+          <div class="social-service"><span>01</span><strong>Posicionamento</strong><small>Tom de voz, público e direção de marca.</small></div>
+          <div class="social-service"><span>02</span><strong>Organização de perfil</strong><small>Bio, destaques, links e jornada.</small></div>
+          <div class="social-service"><span>03</span><strong>Calendário de posts</strong><small>Pautas, formatos e frequência.</small></div>
+          <div class="social-service"><span>04</span><strong>Identidade do feed</strong><small>Criativos com cara de marca.</small></div>
+          <div class="social-service"><span>05</span><strong>Conteúdo e textos</strong><small>Comunicação que informa e vende.</small></div>
+          <div class="social-service"><span>06</span><strong>Análise mensal</strong><small>O que funcionou e o que ajustar.</small></div>
+        </div>
+
+        <a href="#contato" class="social-link" data-goal="Organizar marketing e redes sociais">Quero organizar minha presença digital <b>↗</b></a>
+      </div>
+
+      <div class="social-profile-stage reveal" aria-label="Exemplo de perfil social organizado">
+        <div class="profile-orbit orbit-one" aria-hidden="true"></div>
+        <div class="profile-orbit orbit-two" aria-hidden="true"></div>
+
+        <div class="phone-shell">
+          <i class="phone-button phone-button-top" aria-hidden="true"></i>
+          <i class="phone-button phone-button-mid" aria-hidden="true"></i>
+          <i class="phone-button phone-button-right" aria-hidden="true"></i>
+          <div class="phone-island" aria-hidden="true"><span></span></div>
+          <div class="profile-card">
+          <div class="profile-status" aria-hidden="true"><strong>9:41</strong><span><i></i><i></i><b></b></span></div>
+          <div class="profile-ui-head">
+            <div class="profile-avatar"><span>B</span></div>
+            <div class="profile-stats">
+              <div><strong>128</strong><span>posts</span></div>
+              <div><strong>24,8k</strong><span>seguidores</span></div>
+              <div><strong>486</strong><span>seguindo</span></div>
+            </div>
+          </div>
+          <div class="profile-identity">
+            <strong>Nome da marca</strong>
+            <span>@suaempresa</span>
+            <p>Posicionamento claro para marcas que querem crescer no digital.</p>
+            <small>Estratégia · Conteúdo · Resultado</small>
+          </div>
+          <div class="profile-actions"><span>Seguir</span><span>Mensagem</span><i>⌄</i></div>
+          <div class="profile-highlights" aria-hidden="true">
+            <div><i>01</i><span>Sobre</span></div><div><i>02</i><span>Serviços</span></div><div><i>03</i><span>Cases</span></div><div><i>04</i><span>Contato</span></div>
+          </div>
+          <div class="profile-tabs" aria-hidden="true"><span class="active">▦</span><span>▣</span><span>♙</span></div>
+          <div class="profile-feed" aria-hidden="true">
+            <div class="feed-tile tile-editorial"><span>MARCA<br><b>COM DIREÇÃO.</b></span></div>
+            <div class="feed-tile tile-visual"><i></i><b>01</b></div>
+            <div class="feed-tile tile-copy"><span>conteúdo que<br><b>conecta.</b></span></div>
+            <div class="feed-tile tile-product"><i></i><span>PRODUTO</span></div>
+            <div class="feed-tile tile-data"><strong>+38%</strong><span>alcance</span></div>
+            <div class="feed-tile tile-position"><span>POSICIONAMENTO</span><i></i></div>
+          </div>
+          </div>
+          <div class="phone-home" aria-hidden="true"></div>
+        </div>
+
+        <div class="profile-notes">
+          <div class="profile-note note-strategy"><i></i><span><b>Posicionamento</b>Marca clara e reconhecível</span></div>
+          <div class="profile-note note-profile"><i></i><span><b>Perfil organizado</b>Jornada pensada para converter</span></div>
+          <div class="profile-note note-content"><i></i><span><b>Conteúdo estratégico</b>Consistência com intenção</span></div>
+        </div>
+        <p class="mockup-disclaimer">Simulação ilustrativa de perfil organizado — não representa dados de um cliente real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="marquee-strip" aria-label="Áreas de atuação">
+    <div class="marquee-track" aria-hidden="true">
+      <span class="mq-group">
+        <span class="mq-item">Loja virtual</span>
+        <span class="mq-item">Gestão de marketplaces</span>
+        <span class="mq-item">Estratégia de crescimento</span>
+        <span class="mq-item">Tráfego pago</span>
+        <span class="mq-item">Redes sociais &amp; conteúdo</span>
+        <span class="mq-item">Automação &amp; IA</span>
+        <span class="mq-item">Operação digital</span>
+      </span>
+      <span class="mq-group">
+        <span class="mq-item">Loja virtual</span>
+        <span class="mq-item">Gestão de marketplaces</span>
+        <span class="mq-item">Estratégia de crescimento</span>
+        <span class="mq-item">Tráfego pago</span>
+        <span class="mq-item">Redes sociais &amp; conteúdo</span>
+        <span class="mq-item">Automação &amp; IA</span>
+        <span class="mq-item">Operação digital</span>
+      </span>
+    </div>
+  </section>
+
+  <!-- ============ SINAIS DE ALERTA (problema → solução) ============ -->
+  <section class="audience problems spotlight" id="sinais" aria-labelledby="problems-title">
+    <div class="wrap">
+      <div class="section-head reveal"><h2 id="problems-title">Se isso acontece no seu negócio, <span>você está perdendo vendas.</span></h2><p>A boa notícia: cada um desses sinais tem solução. Veja o problema, o que ele custa e como a Beriz resolve.</p></div>
+      <div class="problem-grid">
+        <article class="problem-card">
+          <div class="pc-top"><span class="app-icon icon-sage" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 2-1.5L22 8H6"/></svg></span><span class="pc-status"><span class="pc-before">Carrinho abandonado</span><span class="pc-after">Compra concluída</span></span></div>
+          <p class="quote">“Tenho site, mas ele <span class="hl-pain">não vende</span>.”</p>
+          <p class="pc-cost"><b>O que isso custa:</b> cada visita que sai sem comprar é anúncio pago jogado fora.</p>
+          <div class="pc-fix"><b>Como resolvemos</b>Página de produto clara, checkout simples e frete calculado na hora.</div>
+          <a href="#atuacao" class="pc-link" data-area="loja">Ver a solução: Loja virtual <b aria-hidden="true">→</b></a>
+        </article>
+        <article class="problem-card">
+          <div class="pc-top"><span class="app-icon icon-dark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><span class="pc-status"><span class="pc-before">Custo alto por venda</span><span class="pc-after">Custo por venda claro</span></span></div>
+          <p class="quote">“Invisto em anúncio e <span class="hl-pain">não vejo retorno</span>.”</p>
+          <p class="pc-cost"><b>O que isso custa:</b> sem medir a venda, você paga por curtida e não por cliente.</p>
+          <div class="pc-fix"><b>Como resolvemos</b>Público certo, criativos testados, remarketing e investimento acompanhado toda semana.</div>
+          <a href="#atuacao" class="pc-link" data-area="trafego">Ver a solução: Tráfego pago <b aria-hidden="true">→</b></a>
+        </article>
+        <article class="problem-card">
+          <div class="pc-top"><span class="app-icon icon-sand" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3.5 9 5 4h14l1.5 5"/><path d="M4.5 9v11h15V9"/><path d="M3.5 9h17a3 3 0 0 1-5.7 1.2A3 3 0 0 1 12 12a3 3 0 0 1-2.8-1.8A3 3 0 0 1 3.5 9Z"/><path d="M10 20v-5h4v5"/></svg></span><span class="pc-status"><span class="pc-before">Página 5 da busca</span><span class="pc-after">1ª página da busca</span></span></div>
+          <p class="quote">“Meus anúncios <span class="hl-pain">não aparecem</span> no marketplace.”</p>
+          <p class="pc-cost"><b>O que isso custa:</b> se o cliente não encontra você, ele compra do concorrente.</p>
+          <div class="pc-fix"><b>Como resolvemos</b>Título, fotos, ficha técnica e preço otimizados para cada marketplace.</div>
+          <a href="#atuacao" class="pc-link" data-area="marketplace">Ver a solução: Marketplaces <b aria-hidden="true">→</b></a>
+        </article>
+        <article class="problem-card">
+          <div class="pc-top"><span class="app-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6"/></svg></span><span class="pc-status"><span class="pc-before">Perfil confuso</span><span class="pc-after">Perfil que vende</span></span></div>
+          <p class="quote">“Posto, mas <span class="hl-pain">ninguém compra</span> pelo Instagram.”</p>
+          <p class="pc-cost"><b>O que isso custa:</b> um perfil confuso faz o cliente desistir antes de chamar no direct.</p>
+          <div class="pc-fix"><b>Como resolvemos</b>Perfil organizado, calendário de posts e conteúdo com intenção de venda.</div>
+          <a href="#atuacao" class="pc-link" data-area="social">Ver a solução: Redes sociais <b aria-hidden="true">→</b></a>
+        </article>
+      </div>
+      <div class="page-dots" data-dots-for=".problem-grid" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ PROJETOS REAIS ============ -->
+  <section class="cases" id="projetos" aria-labelledby="cases-title">
+    <div class="wrap">
+      <div class="section-head reveal"><h2 id="cases-title">Projetos <span>reais.</span></h2><p>Navegue dentro de cada projeto como se estivesse no celular. Toque no aparelho para abrir o site de verdade.</p></div>
+      <div class="case-track">
+        <article class="case">
+          <a class="case-device" href="https://macaparda.com.br/" target="_blank" rel="noopener" aria-label="Macaparda: abrir o site real em uma nova aba">
+            <span class="cd-btn cd-btn-a" aria-hidden="true"></span><span class="cd-btn cd-btn-b" aria-hidden="true"></span><span class="cd-btn cd-btn-c" aria-hidden="true"></span><span class="cd-btn cd-btn-p" aria-hidden="true"></span><span class="cd-glass" aria-hidden="true"></span><span class="cd-island" aria-hidden="true"></span>
+            <span class="cd-status" style="--sb:#dcdcdc;--sbc:#111" aria-hidden="true"><b>9:41</b><i></i></span>
+            <span class="cd-screen" style="--sb:#dcdcdc"><img src="assets/img/cases/macaparda.webp" alt="Página inicial da loja Macaparda Moda Feminina" width="600" height="7757" loading="lazy" decoding="async"></span>
+            <span class="cd-bar" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>macaparda.com.br</span>
+            <span class="cd-hint" aria-hidden="true">Toque para abrir ↗</span>
+          </a>
+          <div class="case-info">
+            <span class="case-tag">Loja virtual · Moda feminina</span>
+            <h3>Macaparda</h3>
+            <!-- Depoimento em RASCUNHO: publicar só após aprovação de Leticia -->
+            <blockquote class="case-quote"><p>“A Beriz deixou a nossa loja com a cara da Macaparda. As vitrines ficaram mais bonitas, as promoções ficaram claras e a cliente encontra o que procura sem esforço. Hoje eu divulgo o site com muito mais segurança.”</p><cite>Leticia, Macaparda</cite></blockquote>
+          </div>
+        </article>
+        <article class="case">
+          <a class="case-device" href="https://shopee.com.br/vendoribr" target="_blank" rel="noopener" aria-label="Vendori BR na Shopee: abrir a loja real em uma nova aba">
+            <span class="cd-btn cd-btn-a" aria-hidden="true"></span><span class="cd-btn cd-btn-b" aria-hidden="true"></span><span class="cd-btn cd-btn-c" aria-hidden="true"></span><span class="cd-btn cd-btn-p" aria-hidden="true"></span><span class="cd-glass" aria-hidden="true"></span><span class="cd-island" aria-hidden="true"></span>
+            <span class="cd-status" style="--sb:#a19b9f;--sbc:#ffffff" aria-hidden="true"><b>9:41</b><i></i></span>
+            <span class="cd-screen" style="--sb:#a19b9f"><img src="assets/img/cases/shopee-vendori.webp" alt="Loja Vendori BR na Shopee" width="600" height="2625" loading="lazy" decoding="async">
+              <span class="cd-hot" data-open-page style="left:1.6%;top:15.67%;width:47.6%;height:16.6%" title="Ver produto"></span>
+            </span>
+            <span class="cd-page" aria-hidden="true">
+              <img class="cd-page-base" src="assets/img/cases/vendori-produto.webp" alt="" width="600" height="1179" loading="lazy" decoding="async">
+              <span class="cd-page-photos">
+                <img src="assets/img/cases/vendori-foto-1.webp" alt="" width="600" height="600" loading="lazy" decoding="async">
+                <img src="assets/img/cases/vendori-foto-2.webp" alt="" width="600" height="600" loading="lazy" decoding="async">
+                <span class="cd-hot cd-back" data-close-page title="Voltar à loja"></span>
+                <span class="cd-dots"><i class="on"></i><i></i></span>
+              </span>
+            </span>
+            <span class="cd-bar" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>shopee.com.br/vendoribr</span>
+            <span class="cd-hint" aria-hidden="true">Toque para abrir ↗</span>
+            <span class="cd-hint cd-hint-product" aria-hidden="true">Toque no 1º produto para ver ↓</span>
+          </a>
+          <div class="case-info">
+            <span class="case-tag">Marketplace · Shopee · Beleza</span>
+            <h3>Vendori BR</h3>
+            <!-- Depoimento em RASCUNHO: publicar só após aprovação de Ana -->
+            <blockquote class="case-quote"><p>“Nossos anúncios na Shopee ganharam outra cara: fotos padronizadas, títulos que fazem sentido e uma loja organizada. Hoje a gente passa muito mais confiança para quem visita.”</p><cite>Ana, Vendori BR</cite></blockquote>
+          </div>
+        </article>
+        <article class="case">
+          <a class="case-device" href="https://abrstecidos.github.io/tecido/" target="_blank" rel="noopener" aria-label="ABRS Tecidos: abrir o site real em uma nova aba">
+            <span class="cd-btn cd-btn-a" aria-hidden="true"></span><span class="cd-btn cd-btn-b" aria-hidden="true"></span><span class="cd-btn cd-btn-c" aria-hidden="true"></span><span class="cd-btn cd-btn-p" aria-hidden="true"></span><span class="cd-glass" aria-hidden="true"></span><span class="cd-island" aria-hidden="true"></span>
+            <span class="cd-status" style="--sb:#eeeae2;--sbc:#111" aria-hidden="true"><b>9:41</b><i></i></span>
+            <span class="cd-screen" style="--sb:#eeeae2"><img src="assets/img/cases/abrstecidos.webp" alt="Central de atendimento da ABRS Tecidos" width="600" height="2266" loading="lazy" decoding="async"></span>
+            <span class="cd-bar" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>abrstecidos.github.io</span>
+            <span class="cd-hint" aria-hidden="true">Toque para abrir ↗</span>
+          </a>
+          <div class="case-info">
+            <span class="case-tag">Atendimento online · Tecidos · Brás, SP</span>
+            <h3>ABRS Tecidos</h3>
+            <!-- Depoimento em RASCUNHO: publicar só após aprovação de Alexandre -->
+            <blockquote class="case-quote"><p>“Antes, cada conversa no WhatsApp começava do zero. Com a central de atendimento que a Beriz criou, o cliente já chega dizendo o que precisa, e a gente responde muito mais rápido e com mais organização.”</p><cite>Alexandre, ABRS Tecidos</cite></blockquote>
+          </div>
+        </article>
+        <article class="case">
+          <a class="case-device" href="https://shopee.com.br/syrbr" target="_blank" rel="noopener" aria-label="SyrBR na Shopee: abrir a loja real em uma nova aba">
+            <span class="cd-btn cd-btn-a" aria-hidden="true"></span><span class="cd-btn cd-btn-b" aria-hidden="true"></span><span class="cd-btn cd-btn-c" aria-hidden="true"></span><span class="cd-btn cd-btn-p" aria-hidden="true"></span><span class="cd-glass" aria-hidden="true"></span><span class="cd-island" aria-hidden="true"></span>
+            <span class="cd-status" style="--sb:#000000;--sbc:#ffffff" aria-hidden="true"><b>9:41</b><i></i></span>
+            <span class="cd-screen" style="--sb:#000000"><img src="assets/img/cases/shopee-syrbr.webp" alt="Loja SyrBR na Shopee" width="600" height="1833" loading="lazy" decoding="async"></span>
+            <span class="cd-bar" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>shopee.com.br/syrbr</span>
+            <span class="cd-hint" aria-hidden="true">Toque para abrir ↗</span>
+          </a>
+          <div class="case-info">
+            <span class="case-tag">Marketplace · Shopee · Bolsas e sacolas</span>
+            <h3>SyrBR</h3>
+            <!-- Depoimento em RASCUNHO: publicar só após aprovação de Davi -->
+            <blockquote class="case-quote"><p>“A Beriz organizou a nossa loja na Shopee do começo ao fim. Hoje ela tem identidade, os produtos estão bem apresentados e eu sei exatamente o que melhorar a cada mês.”</p><cite>Davi, SyrBR</cite></blockquote>
+          </div>
+        </article>
+        <article class="case">
+          <a class="case-device" href="https://infdlae.github.io/maisde50cafes/" target="_blank" rel="noopener" aria-label="50+ Maneiras de Fazer Café: abrir o site real em uma nova aba">
+            <span class="cd-btn cd-btn-a" aria-hidden="true"></span><span class="cd-btn cd-btn-b" aria-hidden="true"></span><span class="cd-btn cd-btn-c" aria-hidden="true"></span><span class="cd-btn cd-btn-p" aria-hidden="true"></span><span class="cd-glass" aria-hidden="true"></span><span class="cd-island" aria-hidden="true"></span>
+            <span class="cd-status" style="--sb:#21150e;--sbc:#f5f0ea" aria-hidden="true"><b>9:41</b><i></i></span>
+            <span class="cd-screen" style="--sb:#21150e"><img src="assets/img/cases/maisde50cafes.webp" alt="Página de vendas do guia 50+ Maneiras de Fazer Café" width="600" height="10769" loading="lazy" decoding="async"></span>
+            <span class="cd-bar" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>infdlae.github.io</span>
+            <span class="cd-hint" aria-hidden="true">Toque para abrir ↗</span>
+          </a>
+          <div class="case-info">
+            <span class="case-tag">Página de vendas · Produto digital</span>
+            <h3>50+ Maneiras de Fazer Café</h3>
+            <!-- Depoimento em RASCUNHO: publicar só após aprovação de Daniel -->
+            <blockquote class="case-quote"><p>“A Beriz transformou a ideia do guia em uma página de vendas clara e bonita. Ficou fácil explicar o produto, e quem chega pelo celular entende tudo e compra sem complicação.”</p><cite>Daniel, 50+ Maneiras de Fazer Café</cite></blockquote>
+          </div>
+        </article>
+      </div>
+      <div class="case-carousel-foot">
+        <div class="case-nav" aria-hidden="true">
+          <button type="button" class="case-arrow" data-case-prev tabindex="-1">‹</button>
+          <button type="button" class="case-arrow" data-case-next tabindex="-1">›</button>
+        </div>
+        <div class="page-dots cases-dots" data-dots-for=".case-track" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOVA SEÇÃO: DIAGNÓSTICO RÁPIDO ============ -->
+  <section class="diagnosis spotlight" id="diagnostico" aria-labelledby="diag-title">
+    <div class="wrap">
+      <div class="section-head reveal"><h2 id="diag-title">Em 20 segundos, descubra <span>por onde começar.</span></h2><p>Ative o que acontece hoje no seu negócio e veja na hora quais áreas resolvem isso primeiro.</p></div>
+      <div class="diag-grid">
+        <form class="toggle-list reveal" id="diagForm" aria-label="Situações do seu negócio" onsubmit="return false">
+          <span class="toggle-group-label">Redes sociais</span>
+          <label class="toggle-row"><span>Meu perfil não mostra direito o que eu vendo.</span><input type="checkbox" class="switch" role="switch" data-diag="social"></label>
+          <label class="toggle-row"><span>Posto sem frequência ou sem saber o que postar.</span><input type="checkbox" class="switch" role="switch" data-diag="social"></label>
+          <span class="toggle-group-label">Anúncios</span>
+          <label class="toggle-row"><span>Já investi em anúncio e não vi venda.</span><input type="checkbox" class="switch" role="switch" data-diag="trafego"></label>
+          <label class="toggle-row"><span>Minhas vendas dependem só de indicação ou do orgânico.</span><input type="checkbox" class="switch" role="switch" data-diag="trafego"></label>
+          <span class="toggle-group-label">Canais de venda</span>
+          <label class="toggle-row"><span>Quero vender em marketplace, mas não sei por onde começar.</span><input type="checkbox" class="switch" role="switch" data-diag="marketplace"></label>
+          <label class="toggle-row"><span>Meus anúncios em marketplace não aparecem ou não vendem.</span><input type="checkbox" class="switch" role="switch" data-diag="marketplace"></label>
+          <label class="toggle-row"><span>Tenho loja virtual, mas ela vende pouco.</span><input type="checkbox" class="switch" role="switch" data-diag="loja"></label>
+          <label class="toggle-row"><span>Ainda não tenho uma loja própria.</span><input type="checkbox" class="switch" role="switch" data-diag="loja"></label>
+        </form>
+
+        <a href="#diagResult" class="diag-mini" id="diagMini" aria-hidden="true" tabindex="-1"><span id="diagMiniText">Marque o que acontece no seu negócio</span><b>Ver resultado ↓</b></a>
+        <aside class="diag-result reveal" id="diagResult" aria-live="polite">
+          <span class="diag-count" id="diagCount">Nenhum item marcado</span>
+          <h3 class="diag-title" id="diagTitle">Marque ao menos uma situação.</h3>
+          <p class="diag-text" id="diagText">Assim que você ativar um item, mostramos qual área da Beriz resolve isso e como ela funciona.</p>
+          <div class="diag-bars" id="diagBars">
+            <div class="diag-bar" data-bar="social">Redes sociais<small>0</small><i></i></div>
+            <div class="diag-bar" data-bar="trafego">Tráfego pago<small>0</small><i></i></div>
+            <div class="diag-bar" data-bar="marketplace">Marketplaces<small>0</small><i></i></div>
+            <div class="diag-bar" data-bar="loja">Loja virtual<small>0</small><i></i></div>
+          </div>
+          <div class="diag-actions">
+            <a href="#contato" class="btn btn-green" id="diagCta" aria-disabled="true">Quero ajuda com isso</a>
+            <a href="#atuacao" class="btn btn-light" id="diagSee" data-area="marketplace">Ver como funciona</a>
+            <button type="button" class="diag-reset" id="diagReset">Limpar respostas</button>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="wrap">
+      <div class="section-head reveal"><h2>Perguntas <span>frequentes.</span></h2></div>
+      <div class="faq-list reveal">
+        <details class="faq-item">
+          <summary><span>Atendem negócios pequenos ou só operações grandes?</span><i>+</i></summary>
+          <p>Atendemos negócios em diferentes estágios, de quem está estruturando o primeiro canal digital a operações que já vendem e querem organizar e escalar. O diagnóstico inicial define o escopo certo para cada momento.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>Posso contratar só uma área, como redes sociais ou tráfego?</span><i>+</i></summary>
+          <p>Pode. Cada área funciona sozinha. Se o diagnóstico mostrar que outra área está travando o resultado, a gente avisa e você decide se quer incluir.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>Como funciona o primeiro contato?</span><i>+</i></summary>
+          <p>Você preenche o formulário com um pouco do seu momento atual. A partir disso, avaliamos o cenário e retornamos para entender melhor a operação e propor os próximos passos.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>Vocês trabalham com todas as plataformas listadas no site?</span><i>+</i></summary>
+          <p>Sim. Atuamos tanto em marketplaces (Mercado Livre, Shopee, TikTok Shop, Amazon, Magalu, SHEIN) quanto em plataformas de loja própria (Shopify, Nuvemshop, Yampi, Loja Integrada, Tray, entre outras).</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>O trabalho é pontual ou contínuo?</span><i>+</i></summary>
+          <p>Depende do objetivo. Existem frentes de estruturação (com início, meio e fim) e frentes de operação contínua, como tráfego pago e gestão de marketplaces. Isso é definido junto com você na etapa de estratégia.</p>
+        </details>
+        <details class="faq-item">
+          <summary><span>Preciso já ter loja ou perfil pronto para começar?</span><i>+</i></summary>
+          <p>Não. Também estruturamos negócios que ainda não têm presença digital organizada. Esse é, inclusive, um dos pontos de partida mais comuns.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-final dark-strip spotlight" id="contato">
+    <div class="sunrise" aria-hidden="true"><img src="assets/img/beriz-logo-light.webp" alt="" width="804" height="809" loading="lazy" decoding="async"></div>
+    <div class="wrap">
+      <h2 class="reveal">Seu negócio está pronto para crescer no digital?</h2>
+      <p class="reveal">Conte como está hoje. A gente mostra onde estão as <span class="hl">oportunidades reais</span> e o que fazer primeiro.</p>
+      <div class="hero-ctas reveal"><a href="#contato" class="btn btn-green">Fale com a gente</a><a href="#diagnostico" class="btn btn-light">Fazer o diagnóstico rápido</a></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div><a href="#top" class="logo"><img src="assets/img/beriz-logo.svg" alt="Beriz"><span>BERIZ</span></a><p class="tagline">Digital Commerce &amp; Growth. Estrutura para negócios digitais que querem evoluir.</p><p class="concept">Commerce × Technology × Growth</p><p class="footer-location">São Paulo, SP — Brasil</p></div>
+      <div class="fcol"><h5>Navegação</h5><a href="#atuacao">Áreas de atuação</a><a href="#sinais">Sinais de alerta</a><a href="#projetos">Projetos reais</a><a href="#diagnostico">Diagnóstico rápido</a><a href="#plataformas">Plataformas</a><a href="#faq">Dúvidas</a><a href="#contato">Contato</a></div>
+      <div class="fcol"><h5>Contato</h5><a href="mailto:beriztec@gmail.com">beriztec@gmail.com</a><a href="https://wa.me/5511994724695" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/beriztec" target="_blank" rel="noopener">Instagram</a><a href="privacidade.html">Política de Privacidade</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="footYear">2026</span> BERIZ — Todos os direitos reservados.</span><span>Digital Commerce &amp; Growth</span></div>
+  </div>
+</footer>
+
+<div class="contact-modal" id="contactModal" aria-hidden="true" inert>
+  <button class="contact-backdrop" type="button" aria-label="Fechar formulário" data-close-contact></button>
+  <section class="contact-dialog" role="dialog" aria-modal="true" aria-labelledby="contactTitle" tabindex="-1">
+    <button class="contact-close" type="button" aria-label="Fechar formulário" data-close-contact><span></span><span></span></button>
+    <div class="contact-dialog-head">
+      
+      <h2 id="contactTitle">Conte um pouco sobre o seu negócio.</h2>
+      <p>Preencha os dados abaixo. Ao enviar, abrimos o WhatsApp da Beriz com a sua mensagem pronta.</p>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-grid">
+        <label class="form-field"><span>Nome <b>*</b></span><input type="text" name="name" autocomplete="name" placeholder="Como podemos chamar você?" required maxlength="120"></label>
+        <label class="form-field"><span>E-mail <b>*</b></span><input type="email" name="email" autocomplete="email" placeholder="voce@empresa.com" required maxlength="160"></label>
+        <label class="form-field"><span>WhatsApp <b>*</b></span><input type="tel" name="whatsapp" autocomplete="tel" inputmode="tel" placeholder="(11) 99999-9999" required maxlength="24"></label>
+        <label class="form-field"><span>Empresa</span><input type="text" name="company" autocomplete="organization" placeholder="Nome da empresa" maxlength="160"></label>
+        <label class="form-field"><span>Faturamento mensal</span><select name="monthly_revenue"><option value="">Selecione uma faixa</option><option>Até R$ 10 mil</option><option>De R$ 10 mil a R$ 50 mil</option><option>De R$ 50 mil a R$ 100 mil</option><option>De R$ 100 mil a R$ 500 mil</option><option>Acima de R$ 500 mil</option><option>Ainda não faturo</option></select></label>
+        <label class="form-field"><span>Objetivo principal <b>*</b></span><select name="main_goal" required><option value="">Selecione o objetivo</option><option>Estruturar ou melhorar o e-commerce</option><option>Crescer nos marketplaces</option><option>Organizar marketing e redes sociais</option><option>Aumentar vendas com tráfego pago</option><option>Automatizar processos e operação</option><option>Consultoria e estratégia digital</option></select></label>
+        <label class="form-field form-field-full"><span>Desafio atual</span><textarea name="message" rows="4" placeholder="O que você gostaria de melhorar hoje?" maxlength="1200"></textarea></label>
+      </div>
+      <label class="form-consent"><input type="checkbox" name="consent" required><span>Autorizo o contato da Beriz pelos dados informados e concordo com o tratamento dessas informações para atendimento. <b>*</b></span></label>
+      <label class="form-trap" aria-hidden="true">Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <input type="hidden" name="source_page" value="">
+      <input type="hidden" name="contact_context" value="">
+      <div class="form-footer">
+        <p class="form-status" id="contactFormStatus" role="status" aria-live="polite"></p>
+        <button class="btn btn-green form-submit" type="submit"><span>Enviar pelo WhatsApp</span><i>→</i></button>
+      </div>
+    </form>
+    <div class="contact-success" id="contactSuccess" hidden>
+      <div class="success-mark">✓</div>
+      <h3>Quase lá!</h3>
+      <p>Abrimos o WhatsApp com a sua mensagem pronta. É só tocar em enviar. Se ele não abriu, use o botão abaixo.</p>
+      <div class="success-actions">
+        <a class="btn btn-green" id="contactWhatsLink" href="https://wa.me/5511994724695" target="_blank" rel="noopener">Abrir WhatsApp</a>
+        <button class="btn btn-primary" type="button" data-close-contact>Voltar ao site</button>
+      </div>
+    </div>
+  </section>
+</div>
+<a href="https://wa.me/5511994724695?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Beriz%20e%20gostaria%20de%20conversar." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4C9.4 4 4 9.4 4 16c0 2.2.6 4.3 1.7 6.1L4 28l6.1-1.6A11.9 11.9 0 0 0 16 28c6.6 0 12-5.4 12-12S22.6 4 16 4Z"/><path d="M11.4 10.8c.3-.6.6-.6.9-.6h.7c.2 0 .5 0 .7.5.3.7 1 2.3 1 2.5.1.2.1.4 0 .6-.1.2-.2.3-.4.5l-.5.6c-.2.2-.4.4-.2.7.2.4 1 1.5 2 2.4 1.4 1.2 2.5 1.6 2.9 1.8.4.2.6.1.8-.1l.8-.9c.2-.3.5-.2.8-.1l2.2 1c.3.1.5.2.5.4.1.2.1 1-.3 1.9-.4.9-2 1.8-2.8 1.9-.7.1-1.6.2-5.1-1.1-4.3-1.7-7-6-7.2-6.3-.2-.3-1.7-2.2-1.7-4.3 0-2 1.1-3 1.5-3.5Z" fill="var(--dark)"/></svg>
+</a>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/ios.js"></script>
+<script>var fy=document.getElementById('footYear');if(fy)fy.textContent=new Date().getFullYear();</script>
+</body>
+</html>
